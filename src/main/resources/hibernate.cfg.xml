@@ -3,17 +3,19 @@
 "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
- <session-factory>
-  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/holobp</property>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/holobp</property>
 
-  <property name="hibernate.connection.username">root</property>
- 	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="show_sql">true</property>
-        
-        
-  <mapping resource="de/holobp/user.hbm.xml"></mapping>
-  <mapping resource="de/holobp/benutzerstammdaten.hbm.xml"></mapping>
-  <mapping resource="de/holobp/interesse.hbm.xml"></mapping>
-</session-factory>
+		<!-- Hier bitte Benutzername und Passwort der Datenbank anpassen -->
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Geheimpasswort</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+
+
+		<mapping resource="de/holobp/user.hbm.xml"></mapping>
+		<mapping resource="de/holobp/benutzerstammdaten.hbm.xml"></mapping>
+		<mapping resource="de/holobp/interesse.hbm.xml"></mapping>
+	</session-factory>
 </hibernate-configuration>
