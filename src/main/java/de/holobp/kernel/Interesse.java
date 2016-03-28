@@ -1,3 +1,10 @@
+/**
+ * Klasse für einzelnes Interesse. 
+ * 
+ * @author Adrian
+ * @author Allan Grunert <contact@allangrunert.de>
+ * 
+ */
 package de.holobp.kernel;
 
 public class Interesse {
