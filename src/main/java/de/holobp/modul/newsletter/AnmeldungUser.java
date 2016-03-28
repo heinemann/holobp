@@ -1,4 +1,4 @@
-package de.holobp.newsletter;
+package de.holobp.modul.newsletter;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -9,10 +9,10 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import de.holobp.kernel.BenutzerStammdaten;
-import de.holobp.kernel.Interesse;
-import de.holobp.kernel.Interessen;
-import de.holobp.kernel.User;
+import de.holobp.modul.benutzer.BenutzerStammdaten;
+import de.holobp.modul.benutzer.Interesse;
+import de.holobp.modul.benutzer.Interessen;
+import de.holobp.modul.benutzer.User;
 
 @ManagedBean(name="anmeldungUser")
 public class AnmeldungUser {

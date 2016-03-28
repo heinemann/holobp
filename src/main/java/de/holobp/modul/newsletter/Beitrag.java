@@ -1,4 +1,4 @@
-package de.holobp.newsletter;
+package de.holobp.modul.newsletter;
 
 import java.sql.Date;
 

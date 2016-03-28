@@ -3,7 +3,7 @@ package de.holobp.webapp;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class HelloWorld {
+public class LandingPage {
 
     private String firstName = "John";
     private String lastName = "Doe";

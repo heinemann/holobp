@@ -1,4 +1,4 @@
-package de.holobp.kernel;
+package de.holobp.modul.benutzer;
 
 public class Interessen {
 	

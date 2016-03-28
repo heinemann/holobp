@@ -1,4 +1,11 @@
-package de.holobp.kernel;
+/**
+ * Klasse für einzelnes Interesse. 
+ * 
+ * @author Adrian
+ * @author Allan Grunert <contact@allangrunert.de>
+ * 
+ */
+package de.holobp.modul.benutzer;
 
 public class Interesse {
 	private String name;

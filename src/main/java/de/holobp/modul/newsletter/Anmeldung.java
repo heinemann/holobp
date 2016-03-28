@@ -1,7 +1,7 @@
-package de.holobp.newsletter;
+package de.holobp.modul.newsletter;
 
-import de.holobp.kernel.BenutzerStammdaten;
-import de.holobp.kernel.User;
+import de.holobp.modul.benutzer.BenutzerStammdaten;
+import de.holobp.modul.benutzer.User;
 
 public class Anmeldung {
 	
