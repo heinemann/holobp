@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="de.holobp.kernel.BenutzerStammdaten" table="user" catalog="holobp">
+    <class name="de.holobp.modul.benutzer.BenutzerStammdaten" table="user" catalog="holobp">
         <id name="id" type="int">
             <column name="id" />
             <generator class="identity" />
