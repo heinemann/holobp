@@ -2,8 +2,9 @@ package de.holobp.modul.newsletter;
 
 import java.sql.Date;
 
-import de.holobp.kernel.Interessen;
-import de.holobp.kernel.User;
+import de.holobp.modul.benutzer.Interessen;
+import de.holobp.modul.benutzer.User;
+
 
 public class Beitrag {
 
