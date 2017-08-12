@@ -18,10 +18,10 @@
             <column name="password" length="255" not-null="true" unique="true" />
         </property>
          <property name="date_creation" type="timestamp">
-            <column name="date_creation"  not-null="true" unique="true" />
+            <column name="date_creation"  not-null="false" unique="true" />
         </property>
         <property name="date_modified" type="timestamp">
-            <column name="date_modified"  not-null="true" unique="true" />
+            <column name="date_modified"  not-null="false" unique="true" />
         </property>
     </class>
 </hibernate-mapping>
