@@ -73,4 +73,18 @@ public class User {
 		this.email = email;
 	}
 
+	public String getUid() {
+		return uid;
+	}
+
+	public void setUid(String uid) {
+		this.uid = uid;
+	}
+
+	public void setDateModified(Timestamp dateModified) {
+		this.dateModified = dateModified;
+	}
+	
+	
+
 }

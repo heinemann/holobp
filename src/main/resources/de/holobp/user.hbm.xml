@@ -8,6 +8,9 @@
             <column name="id" />
             <generator class="identity" />
         </id>
+        <property name="uid" type="string">
+            <column name="uid" length="255" not-null="true" unique="true" />
+        </property>
         <property name="email" type="string">
             <column name="email" length="255" not-null="true" unique="true" />
         </property>
@@ -17,11 +20,11 @@
         <property name="password" type="string">
             <column name="password" length="255" not-null="true" unique="true" />
         </property>
-         <property name="date_creation" type="timestamp">
-            <column name="date_creation"  not-null="false" unique="true" />
+         <property name="dateCreation" type="timestamp">
+            <column name="dateCreation"  not-null="false" unique="true" />
         </property>
-        <property name="date_modified" type="timestamp">
-            <column name="date_modified"  not-null="false" unique="true" />
+        <property name="dateModified" type="timestamp">
+            <column name="dateModified"  not-null="false" unique="true" />
         </property>
     </class>
 </hibernate-mapping>

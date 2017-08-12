@@ -19,6 +19,7 @@ public class AnmeldungUser {
 	private String email;
 	private String password;
 	private int id;
+	private String uid;
 	
 	 private static SessionFactory factory; 
 
@@ -55,6 +56,7 @@ public class AnmeldungUser {
 	public User getUSer()
 	{
 		this.id = 100;
+		this.uid = "0F2034x03F34";
 		
 		
 		User user = new User();
@@ -62,6 +64,7 @@ public class AnmeldungUser {
 		user.setUsername(this.email);
 		user.setPassword(this.password);
 		user.setId(this.id);
+		user.setUid(this.uid);
 		return user;
 	}
 	
