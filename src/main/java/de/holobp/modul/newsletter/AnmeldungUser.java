@@ -63,7 +63,7 @@ public class AnmeldungUser {
 	
 	public User getUSer()
 	{
-		this.id = 100;
+		this.id=0;
 		this.uid = "0F2034x03F34";
 		
 		
@@ -134,6 +134,29 @@ public class AnmeldungUser {
 				new FacesMessage("Sie wurden zum Newsletter erfolgreich angemeldet."));
 		return "";
 		
+	}
+	
+	public User getUser(int id)
+	{
+		 User user = null;
+
+		try{
+	         factory = new Configuration().configure().buildSessionFactory();
+	      }catch (Throwable ex) { 
+	         System.err.println("Failed to create sessionFactory object." + ex);
+	         throw new ExceptionInInitializerError(ex); 
+	      }
+		
+		 Session session = factory.openSession();
+		try {
+           
+            user =  (User) session.get(User.class, id);
+            System.out.println("user: "+ user.getId());
+            System.out.println("user: "+ user.getEmail());
+        } catch (Exception e) {
+
+        }
+		return user;
 	}
 	
 

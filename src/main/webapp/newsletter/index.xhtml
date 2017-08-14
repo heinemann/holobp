@@ -12,6 +12,9 @@
     <h:body>
         <h:form>
         <p:growl id="messages"></p:growl>
+        
+        #{anmeldungUser.getUser(1).getId()}
+        #{anmeldungUser.getUser(1).getEmail()}
 
             <p:panel header="Newsletter Registrieren">
                 <h:panelGrid columns="2" cellpadding="4">
